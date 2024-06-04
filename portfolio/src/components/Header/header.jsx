@@ -1,5 +1,5 @@
 import logo from '../../assets/logo.svg'
-import portfolio from '../../assets/portfolio1.jpg'
+import portfolio from '../../assets/profile4.jpg'
 
 import {FaTelegramPlane,FaLinkedinIn} from 'react-icons/fa'
 import {AiFillGithub} from 'react-icons/ai'
