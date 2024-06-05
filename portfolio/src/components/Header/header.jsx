@@ -13,6 +13,8 @@ const Header = () => {
                 <svg className="w-2 h-2 mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 </svg>
             </span>
+            
+
             <img src={portfolio} alt='Karthik' className='rounded-full w-8 h-8 ml-3 mr-3'/>
             <img src={logo} alt='Karthik' className="w-24"/>
             
@@ -21,22 +23,22 @@ const Header = () => {
         
             <div className='rounded-2xl pt-2.5 pb-2.5 md:mr-10 sm:m-0 bg-zinc-900 text-white text-lg font-semibold sm:text-lg'>
                 <Link to="/">
-                    <span className='rounded-2xl py-2 px-4 mx-1 cursor-pointer hover:bg-black sm:px-2'>
+                    <span className='rounded-2xl py-2 px-4 mx-1 cursor-pointer transition duration-700 hover:bg-black sm:px-2'>
                         Home
                     </span>
                 </Link>
                 <Link to="/about">
-                    <span className='rounded-2xl py-2 px-4 mx-1 cursor-pointer hover:bg-black sm:px-2'>
+                    <span className='rounded-2xl py-2 px-4 mx-1 cursor-pointer transition duration-700 hover:bg-black sm:px-2'>
                         About
                     </span>
                 </Link>
                 <Link to="/work">
-                    <span className='rounded-2xl py-2 px-4 mx-1 cursor-pointer hover:bg-black sm:px-2'>
+                    <span className='rounded-2xl py-2 px-4 mx-1 cursor-pointer transition duration-700 hover:bg-black sm:px-2'>
                         Work
                     </span>
                 </Link>
                 <Link to="/resume">
-                    <span className='rounded-2xl py-2 px-4 mx-1 cursor-pointer hover:bg-black sm:px-2'>
+                    <span className='rounded-2xl py-2 px-4 mx-1 cursor-pointer transition duration-700 hover:bg-black sm:px-2'>
                         Resume
                     </span>
                 </Link>
@@ -49,9 +51,9 @@ const Header = () => {
         </div>
         <div className='rounded flex flex-col justify-center md:hidden sm:hidden mr-5'>
             <div className='text-white text-2xl flex flex-row justify-center items-center'>
-                <span className='mx-3 p-1 w-7 cursor-pointer hover:text-gray-500 hover:text-3xl'> <a href='https://github.com/MVKarthikReddy/' target='_blank'><AiFillGithub className='hover:animation-pulse'/></a></span>
-                <span className='mx-3 p-1 cursor-pointer w-7 hover:text-gray-500 hover:text-3xl'><a href='https://www.linkedin.com/in/karthik-reddy-medagam/' target='_blank'><FaLinkedinIn /></a></span>
-                <span className='mx-3 p-1 cursor-pointer w-7 hover:text-gray-500 hover:text-3xl'><a href='https://t.me/Karthik_Reddy_Medagam' target='_blank'><FaTelegramPlane /></a></span>
+                <span className='mx-3 p-2 w-7 cursor-pointer hover:text-gray-500 transition duration-500 hover:scale-x-110'> <a href='https://github.com/MVKarthikReddy/' target='_blank'><AiFillGithub className='hover:animation-pulse'/></a></span>
+                <span className='mx-3 p-2 cursor-pointer w-7 hover:text-gray-500 transition duration-500 hover:scale-x-110'><a href='https://www.linkedin.com/in/karthik-reddy-medagam/' target='_blank'><FaLinkedinIn /></a></span>
+                <span className='mx-3 p-2 cursor-pointer w-7 hover:text-gray-500 transition duration-500 hover:scale-x-110'><a href='https://t.me/Karthik_Reddy_Medagam' target='_blank'><FaTelegramPlane /></a></span>
             </div>
         </div>
         

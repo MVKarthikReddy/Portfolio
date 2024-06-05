@@ -122,7 +122,7 @@ export const Skillset = {
         },
         {
             id : 3,
-            logo : "https://icons8.com/icon/11799/triangle-stroked",
+            logo : "https://img.icons8.com/?size=100&id=aVM0CHwkTZGB&format=png&color=808080",
             title : "Vercel",
             desc : ""
         }

@@ -5,8 +5,8 @@ import { PiContactlessPaymentDuotone } from "react-icons/pi";
 
 const Home = () => {
     return(
-        
-            <div className="text-white flex flex-col justify-center">
+        <div className="">
+            <div className="text-white flex flex-col justify-center transition-opacity duration-1000 ease-in opacity-100">
                 <div className="border-r-2 border-t-2 border-l-2 border-zinc-500 h-24 w-full">
 
                 </div>
@@ -28,12 +28,12 @@ const Home = () => {
                     
                     <div className="ml-44 w-80 flex flex-row justify-around items-center md:ml-14  sm:ml-10">
                         <Link to='/about'>
-                            <span className="px-3 py-2 rounded-3xl bg-zinc-900 flex flex-row justify-center items-center hover:animate-shake">
+                            <span className="px-3 py-2 rounded-3xl bg-zinc-900 flex flex-row justify-center items-center transition duration-700 hover:animate-bounce">
                                 Read more <FaLocationArrow className="ml-3 text-xs"/> 
                             </span>
                         </Link>
                         <Link to='/contact'>
-                            <span className="px-3 py-2 rounded-3xl bg-zinc-900 border border-white flex flex-row justify-center items-center hover:animate-shake">
+                            <span className="px-3 py-2 rounded-3xl bg-zinc-900 border border-white flex flex-row justify-center items-center transition duration-700 hover:animate-bounce">
                                 Contact <PiContactlessPaymentDuotone className="ml-3"/> 
                             </span>
                         </Link>
@@ -43,6 +43,7 @@ const Home = () => {
                 </div>
 
             </div>
+        </div>
     )
 }
 

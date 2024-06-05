@@ -3,6 +3,24 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #000; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #333; 
+    border-radius: 25px;
+
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
 
 body {
     background-color: rgb(7, 7, 7);

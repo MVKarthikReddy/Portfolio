@@ -80,6 +80,25 @@ const Card = () => {
                 ))
             }
         </div>
+
+        <div className='mt-5'>
+            <label className='text-4xl text-zinc-500 md:text-3xl sm:text-2xl'>Tools</label>
+        </div>
+        <div className="grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-8">
+            {
+                Skillset['tools'].map(skill => (
+                    <div key={skill.id} className="grid2-item bg-gray-900 hover:bg-zinc-800 text-white rounded-lg items-center justify-center cursor-pointer hover:animate-zoomIn">
+                        <div className='h-14 flex flex-row px-4 py-2.5'>
+                            <img src={skill.logo} alt='mongo' className='w-10 h-10 p-1 bg-black rounded-lg'/>
+                            <div className="text-left rtl:text-right">
+                                <div className="ml-2 mb-1 mt-1 text-sm font-semibold">{skill.title}</div>
+                                <div  className="ml-2 -mt-1 font-sans text-xs">{skill.desc}</div>
+                            </div>
+                        </div>
+                    </div>
+                ))
+            }
+        </div>
    
     </div>
 

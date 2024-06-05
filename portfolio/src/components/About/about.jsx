@@ -19,7 +19,7 @@ const About = () => {
 
             <p className='mb-5'>I hold a passion for developing things and believe that great things are often invisible. With an impactful thoughts and job, you can convey your story or the story of your business to a wider audience. I want to help you build an online brand and or strengthening your online brand.</p>
 
-            <p className='mb-5'>I’m a also a person with an entrepreneurial mindset. Due to my entrepreneurial mindset, I’m really flexible when it comes to achieving certain objectives. Think about developing top-notch web(apps) and website, but also there is competiton. When I start with a certain task, I do want to know what you’re exactly in need of.</p>
+            <p className='mb-5'>I’m also a person with an entrepreneurial mindset. Due to my entrepreneurial mindset, I’m really flexible when it comes to achieving certain objectives. Think about developing top-notch web(apps) and website, but also there is competiton. When I start with a certain task, I do want to know what you’re exactly in need of.</p>
 
             <p className='mb-5'>Reason why I spend time in learning more skills is because of the fact that it makes me a more valuable person(developer). I am a big believer in focus on a specific area and getting really good at it.</p>
 

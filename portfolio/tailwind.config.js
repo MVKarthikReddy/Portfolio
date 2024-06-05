@@ -118,10 +118,18 @@ export default {
         flipDown:'flip-down 1s ease 0.25s 1',
         flip : 'flip 2s 0.25s 1',
         wiggle: 'wiggle 0.8s ease 0.25s 2',
+        roll: 'roll 5s infinite',
     },
 
 
 			keyframes: {
+        roll: {
+          '0%': { transform: 'rotateX(45deg) rotateY(-45deg)'},
+          '25%': { transform: 'rotateX(-45deg) rotateY(-45deg)'},
+          '50%': { transform: 'rotateX(45deg) rotateY(45deg)'},
+          '75%': { transform: 'rotateX(-45deg) rotateY(45deg)'},
+          '100%': { transform: 'rotateX(45deg) rotateY(-45deg)'}
+        },
         "fade-in": {
             "0%": {
                 opacity: 0
@@ -1247,6 +1255,8 @@ export default {
       // => @media (min-width: 1536px) { ... }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
 }
 

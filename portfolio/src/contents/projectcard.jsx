@@ -9,12 +9,12 @@ const ProjectCard = () => {
                     <div className="grid grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-10">
                         {
                             projectset.map( project => (
-                                <div key={project.id} className="grid2-item rounded overflow-hidden mx-auto relative overflow-hidden bg-cover bg-no-repeat hover:shadow-md hover:shadow-gray-400">
+                                <div key={project.id} className="grid2-item rounded mx-auto relative overflow-hidden bg-cover bg-no-repeat transition duration-700 hover:shadow-md hover:shadow-gray-400">
                                     <div className='relative group'>
-                                        <img className="cursor-pointer transition duration-300 ease-in-out hover:scale-110 " src={project.img} alt="Sunset in the mountains"  />
-                                        <div className='flex flex-row justify-around w-30 transition duration-500 hidden group-hover:flex absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
-                                             <a href={project.git} ><img src={gitlink} className='w-12 m-3 cursor-pointer border border-gray-500 p-3 rounded-lg bg-gray-950 opacity-70' alt='gitlink' /></a>
-                                             <a href={project.live} ><img src={livedemo} className='w-12 m-3 cursor-pointer border border-gray-500 p-3 rounded-lg bg-gray-950 opacity-70' alt='gitlink' /></a> 
+                                        <img className="cursor-pointer transition duration-500 ease-in-out hover:scale-110 " src={project.img} alt="Sunset in the mountains"  />
+                                        <div className='flex flex-row justify-around w-30 transition duration-700 hidden group-hover:flex absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
+                                             <a href={project.git} className='rounded-lg transition duration-700 hover:bg-black hover:opacity-80 border border-gray-900 m-3 bg-gray-950 w-12 h-12 opacity-70'><img src={gitlink} className='hover:animate-spin hover:opacity-80 hover:bg-black w-12 cursor-pointer rounded-full p-3 bg-gray-950 opacity-70' alt='gitlink' /></a>
+                                             <a href={project.live} className='rounded-lg transition duration-700 hover:bg-black hover:opacity-80 border border-gray-900 m-3 bg-gray-950 w-12 h-12 items-center flex justify-center opacity-70'><img src={livedemo} className='hover:animate-spin hover:opacity-80 hover:bg-black w-12 p-3 cursor-pointer rounded-full bg-gray-950 opacity-70' alt='gitlink' /></a> 
                                         </div>
                                     </div>
                                     <div className="relative group rounded-lg -mt-12 px-10 pt-5 pb-5 bg-zinc-900 m-5 transition duration-500 hover:scale-x-105 hover:scale-y-110">
