@@ -63,11 +63,11 @@ const Contact = () => {
             </div>
             <ToastContainer/>
             
-            <div className='flex flex-row justify-around items-center'>
-                <div className='w-2/6 sm:hidden'>
+            <div className='flex flex-row justify-around items-center sm:flex-col'>
+                <div className='w-2/6 sm:w-4/6'>
                     <img src={shakehand} alt='shakehand' className='w-full bg-opacity-25 mt-16 md:mt-12 '/>
                 </div>
-                <div className='w-2/6 mt-20 sm:w-full sm:flex'>
+                <div className='w-2/6 mt-20 sm:mt-10 sm:w-full sm:flex'>
                     
                     <form ref={form} onSubmit={sendEmail} className='w-full flex flex-col justify-around items-center sm:w-full'>
                         
