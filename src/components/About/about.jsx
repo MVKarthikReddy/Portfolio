@@ -15,7 +15,7 @@ const About = () => {
         </div>
         <div className='flex flex-col justify-center w-4/6 text-white leading-normal mt-10 text-lg sm:text-md md:text-md sm:w-5/6'>
 
-            <p className='mb-5'>Name's Karthik, a passionate FullStack Web developer who is (currently) based in hyderabad. I am 23 years old, but have at least 1.5 year's of experience in building projects and developing.</p>
+            <p className='mb-5'>Name's Karthik, a passionate FullStack Web developer who is (currently) based in hyderabad. I am 23 years old, but have at least 2 year's of experience in building projects and developing.</p>
 
             <p className='mb-5'>I hold a passion for developing things and believe that great things are often invisible. With an impactful thoughts and job, you can convey your story or the story of your business to a wider audience. I want to help you build an online brand and or strengthening your online brand.</p>
 

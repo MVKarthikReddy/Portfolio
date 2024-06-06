@@ -11,7 +11,7 @@ const Home = () => {
 
                 </div>
                 <div className="text-7xl leading-tight items-center flex flex-col justify-center md:text-6xl sm:text-5xl mt-16">
-                    <label className=" font-extrabold pl-15 w-3/4 animate-fadeInDown md:w-5/6 sm:w-full">
+                    <label className=" font-extrabold pl-15 w-3/4 animate-fadeInDown md:w-5/6 sm:5/6">
                         Full Stack Web Developer 
                         {/* from  
                         <span className="m-5 h-34 w-34 text-blue-300">
@@ -20,7 +20,7 @@ const Home = () => {
                     </label>
                 </div>
                 <div className=" flex flex-row justify-center items-center">
-                    <label className="w-3/4 text-xl mt-4 sm:w-full sm:text-md md:w-5/6 sm:w-5/6">
+                    <label className="w-3/4 text-xl mt-4 sm:text-md md:w-5/6 sm:w-5/6">
                         I build websites and applications that are both visually stunning and highly functional. From crafting cutting-edge  apps to exploring the newest web technologies, I'm fully dedicated. Let's collaborate and bring your digital dreams to life!
                     </label>
                 </div>
