@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="text-white h-12 flex flex-row justify-center items-center">
                 
                 <label className="hover:underline">
-                    CopyRight &copy;2024 - <a href="http://localhost:5173/" className="cursor-pointer">Karthik</a>
+                    CopyRight &copy;2024 - <a href="https://karthikreddy.vercel.app/" className="cursor-pointer">Karthik</a>
                 </label>
                 
             </div>
