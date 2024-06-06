@@ -1,13 +1,3 @@
-import javascript from '../assets/javascript.png'
-import react from '../assets/react1.png'
-import tailwind from '../assets/tailwind.png'
-import html from '../assets/html.png'
-import node from '../assets/nodejs.png'
-import django from '../assets/django.png'
-import express from '../assets/express.png'
-import postman from '../assets/postman.png'
-import java from '../assets/java.png'
-
 
 export const Skillset = {
     frontend : [ 
@@ -19,7 +9,7 @@ export const Skillset = {
         },
         {
             id : 2,
-            logo : "https://img.icons8.com/?size=80&id=bzf0DqjXFHIW&format=png",
+            logo : "https://img.icons8.com/?size=80&id=t5K2CR8feVdX&format=gif",
             title : "React JS",
             desc : "Framework"
         },
@@ -65,8 +55,14 @@ export const Skillset = {
         },
         {
             id : 5,
-            logo : "https://img.icons8.com/?size=96&id=Pd2x9GWu9ovX&format=png",
+            logo : "https://img.icons8.com/?size=96&id=GPfHz0SM85FX&format=gif",
             title : "Java",
+            desc : "Programming Language"
+        },
+        {
+            id : 6,
+            logo : "https://img.icons8.com/?size=96&id=Rc0Xn5AtE8kX&format=gif",
+            title : "Pytohn",
             desc : "Programming Language"
         }
     ],
