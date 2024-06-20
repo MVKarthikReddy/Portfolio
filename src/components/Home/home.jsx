@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { FaLocationArrow } from "react-icons/fa";
 import { PiContactlessPaymentDuotone } from "react-icons/pi";
+import GitHubCalendar from "react-github-calendar";
 
 
 const Home = () => {
@@ -37,12 +38,24 @@ const Home = () => {
                                 Contact <PiContactlessPaymentDuotone className="ml-3"/> 
                             </span>
                         </Link>
-                        </div>
+                    </div>
                         
-                    
+                </div>
+                <div className="mt-12 flex flex-col justify-center items-center">
+                    <label className="text-2xl">Days I Code</label>
+                    <div className="mt-6">
+                        <GitHubCalendar
+                            username="MVKarthikReddy"
+                            blockSize={15}
+                            blockMargin={5}
+                            color="#6102ce"
+                            fontSize={16}
+                        />
+                    </div>
                 </div>
 
             </div>
+            
         </div>
     )
 }
