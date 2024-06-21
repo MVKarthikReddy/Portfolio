@@ -39,7 +39,7 @@ export const projectset = [
         title : "MY PHONE",
         desc : "This is an android application which is useful in finding missing phones by accessing location of the mobile using another mobile through sms services and also have some other interesting features like accessing contacts, ringing the phone and can lock phone by just sending an sms.",
         img : "https://res.cloudinary.com/df0tne4sr/image/upload/v1717513422/projects/zr0a5pio0qvyf5mpph7m.jpg",
-        git : "",
+        git : "https://github.com/MVKarthikReddy/MyPhone",
         live : "https://drive.google.com/file/d/1_AVPnq2Y1sq1fib6t1I0vr4vkHID9ZG2/view?usp=sharing"
     },
 
