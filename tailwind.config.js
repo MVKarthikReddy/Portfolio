@@ -27,6 +27,7 @@ export default {
         ],
       },
       animation: {
+        'infinite-scroll': 'infinite-scroll 25s linear infinite',
         fadein: ['fade-in 1s ease-in-out 0.25s 1'],
         fadeout: 'fade-out 1s ease-out 0.25s 1',
         fadeindown: 'fade-in-down 1s ease-in 0.25s 1',
@@ -123,6 +124,10 @@ export default {
 
 
 			keyframes: {
+        'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        },
         roll: {
           '0%': { transform: 'rotateX(45deg) rotateY(-45deg)'},
           '25%': { transform: 'rotateX(-45deg) rotateY(-45deg)'},

@@ -41,16 +41,54 @@ const Home = () => {
                     </div>
                         
                 </div>
-                <div className="mt-12 flex flex-col justify-center items-center">
-                    <label className="text-2xl">Days I Code</label>
-                    <div className="mt-6">
-                        <GitHubCalendar
-                            username="MVKarthikReddy"
-                            blockSize={15}
-                            blockMargin={5}
-                            color="#6102ce"
-                            fontSize={16}
-                        />
+                <div className="mt-12 flex flex-col justify-center items-center w-full">
+                    
+                    <div className="mt-6 w-4/5 overflow-x-scroll no-scrollbar flex flex-col justify-center items-center">
+                        <label className="text-2xl sm:text-xl">Days I Code</label>
+                        <div className="mt-5 ">
+                            <GitHubCalendar
+                                
+                                username="MVKarthikReddy"
+                                blockSize={12}
+                            />
+                            
+                        </div>
+                        
+                    </div>
+                    <div className="flex flex-row md:justify-center sm:justify-center">
+                            <img
+                                
+                                align="center"
+                                alt="Karthik's Contribution Graph"
+                                src="https://github-readme-activity-graph.vercel.app/graph?username=MVKarthikReddy&custom_title=Contribution%Graph&bg_color=070707&color=dcdcdc&line=21abcd&point=555555&area=true&hide_border=true" 
+                            />
+                    </div>
+                    <div className="stats grid grid-cols-2 gap-10 mt-10 md:grid-cols-1 sm:grid-cols-1 md:justify-center ">
+                        <div className="flex flex-row md:justify-center sm:justify-center">
+                            <img
+                                className="flex items-center sm:w-5/6"
+                                align="center"
+                                src="https://github-readme-stats.vercel.app/api?username=MVKarthikReddy&theme=react&hide_border=false&include_all_commits=true&count_private=true"
+                                alt="Karthik"
+                            />
+                        </div>
+                        <div className="flex flex-row md:justify-center sm:justify-center">
+                            <img
+                                className="sm:w-5/6"
+                                align="center"
+                                src="https://github-readme-streak-stats.herokuapp.com/?user=MVKarthikReddy&theme=react&hide_border=false"
+                                alt="Karthik"
+                            />
+                        </div>
+                        <div className="flex flex-row md:justify-center sm:justify-center">
+                            <img 
+                                className="sm:w-4/6"
+                                align="center"
+                                alt="Karthik's Top Languages" 
+                                src="https://github-readme-stats.vercel.app/api/top-langs/?username=MVKarthikReddy&layout=compact&theme=tokyonight&langs_count=10"
+                            />
+                        </div>
+                        
                     </div>
                 </div>
                 
