@@ -3,6 +3,7 @@ import React,{useState, useRef} from 'react'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.min.css';
 import emailjs from "@emailjs/browser";
+import { Link } from 'react-router-dom';
 
 
 const Contact = () => {
@@ -68,7 +69,9 @@ const Contact = () => {
                     <img src={shakehand} alt='shakehand' className='w-full bg-opacity-25 mt-16 md:mt-12 '/>
                 </div>
                 <div className='w-2/6 mt-20 sm:mt-10 sm:w-full sm:flex'>
-                    
+                    <div className='w-full text-white text-center'>
+                      Please contact me directly at <br></br><Link to={`mailto:${'karthikmedagam@gmail.com'}`} ><span className='underline cursor-pointer'>karthikmedagam@gmail.com</span></Link> <br></br> or through this form.
+                    </div>
                     <form ref={form} onSubmit={sendEmail} className='w-full flex flex-col justify-around items-center sm:w-full'>
                         
                         <input type="text" name="from_name" className="w-72 border border-red-900 mt-7 px-2 py-2"  placeholder="Name" onChange={handleChange}/>
