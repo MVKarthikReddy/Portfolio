@@ -3,7 +3,7 @@ import myphone from '../assets/projects/MyPhone.jpg'
 export const projectset = [
 
     {
-        id : 1,
+        id : 6,
         title : "Blogz",
         desc : "This project is a blog website built using the MERN stack. It includes a backend API with Node.js and Express, a MongoDB database for storing blog data, and a React frontend for displaying and interacting with the blog content. The application allows users to view, create, edit, and delete blog posts.",
         img : "https://res.cloudinary.com/df0tne4sr/image/upload/v1717513396/projects/cq4yz1gt195jsj8roz3y.png",
