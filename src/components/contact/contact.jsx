@@ -68,7 +68,7 @@ const Contact = () => {
                 <div className='w-2/6 sm:w-4/6'>
                     <img src={shakehand} alt='shakehand' className='w-full bg-opacity-25 mt-16 md:mt-12 '/>
                 </div>
-                <div className='w-2/6 mt-20 sm:mt-10 sm:w-full sm:flex'>
+                <div className='w-2/6 mt-20 sm:mt-10 sm:w-full sm:flex sm:flex-col'>
                     <div className='w-full text-white text-center'>
                       Please contact me directly at <br></br><Link to={`mailto:${'karthikmedagam@gmail.com'}`} ><span className='underline cursor-pointer'>karthikmedagam@gmail.com</span></Link> <br></br> or through this form.
                     </div>
