@@ -9,7 +9,7 @@ const ProjectCard = () => {
                     <div className="grid grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-10">
                         {
                             projectset.map( project => (
-                                <div key={project.id} className="grid2-item rounded mx-auto relative overflow-hidden bg-cover bg-no-repeat transition duration-700 hover:shadow-md hover:shadow-gray-400">
+                                <div key={project.id} className={`grid2-item rounded mx-auto relative overflow-hidden bg-cover bg-no-repeat transition duration-700 hover:shadow-md hover:shadow-gray-400 ${project.id % 2 == 0 ? 'animate-fadeinbounceright' : 'animate-fadeinbounceleft'}`}>
                                     <div className='relative group'>
                                         <img className="cursor-pointer transition duration-500 ease-in-out hover:scale-110 " src={project.img} alt="Sunset in the mountains"  />
                                         <div className='flex flex-row justify-around w-30 transition duration-700 hidden group-hover:flex absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>

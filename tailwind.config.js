@@ -135,22 +135,23 @@ export default {
           '75%': { transform: 'rotateX(-45deg) rotateY(45deg)'},
           '100%': { transform: 'rotateX(45deg) rotateY(-45deg)'}
         },
-        "fade-in": {
-            "0%": {
-                opacity: 0
+        "fade-out": 
+              {
+                  from: {
+                        opacity: 1
+                    },
+                  to: {
+                        opacity: 0
+                    },
             },
-            "100%": {
-                opacity: 1
-            },
-        },
-        "fade-out": {
-            "0%": {
-                opacity: 1
-            },
-            "100%": {
-                opacity: 0
-            },
-        },
+          "fade-in": {
+                    from: {
+                        opacity: 0
+                    },
+                    to: {
+                        opacity: 1
+                    },
+                },
         "fade-in-down": {
             "0%": {
                 opacity: 0,

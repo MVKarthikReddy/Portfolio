@@ -12,7 +12,7 @@ const Home = () => {
 
                 </div>
                 <div className="text-7xl leading-tight items-center flex flex-col justify-center md:text-6xl sm:text-5xl mt-16">
-                    <label className=" font-extrabold pl-15 w-3/4 animate-fadeInDown md:w-5/6 sm:5/6">
+                    <label className=" font-extrabold pl-15 w-3/4 md:w-5/6 sm:5/6 animate-fadeinbounceright">
                         Full Stack Web Developer 
                         {/* from  
                         <span className="m-5 h-34 w-34 text-blue-300">
@@ -21,13 +21,13 @@ const Home = () => {
                     </label>
                 </div>
                 <div className=" flex flex-row justify-center items-center">
-                    <label className="w-3/4 text-xl mt-4 sm:text-md md:w-5/6 sm:w-5/6">
+                    <label className="w-3/4 text-xl mt-4 sm:text-md md:w-5/6 sm:w-5/6 animate-fadeinbounceleft">
                         I build websites and applications that are both visually stunning and highly functional. From crafting cutting-edge  apps to exploring the newest web technologies, I'm fully dedicated. Let's collaborate and bring your digital dreams to life!
                     </label>
                 </div>
                 <div className="flex flex-col justify-center mt-10">
                     
-                    <div className="ml-44 w-80 flex flex-row justify-around items-center md:ml-14  sm:ml-10">
+                    <div className="ml-44 w-80 flex flex-row justify-around items-center md:ml-14  sm:ml-10 animate-fadeinbounceright">
                         <Link to='/about'>
                             <span className="px-3 py-2 rounded-3xl bg-zinc-900 flex flex-row justify-center items-center transition duration-700 hover:animate-bounce">
                                 Read more <FaLocationArrow className="ml-3 text-xs"/> 
@@ -43,7 +43,7 @@ const Home = () => {
                 </div>
                 <div className="mt-12 flex flex-col justify-center items-center w-full">
                     
-                    <div className="mt-6 w-4/5 overflow-x-scroll no-scrollbar flex flex-col justify-center items-center">
+                    <div className="animate-fadeinbouncedown mt-6 w-4/5 overflow-x-scroll no-scrollbar flex flex-col justify-center items-center">
                         <label className="text-2xl sm:text-xl">Days I Code</label>
                         <div className="mt-5 ">
                             <GitHubCalendar
@@ -55,7 +55,7 @@ const Home = () => {
                         </div>
                         
                     </div>
-                    <div className="flex flex-row md:justify-center sm:justify-center">
+                    <div className="animate-fadeinbounceup flex flex-row md:justify-center h-72 sm:justify-center">
                             <img
                                 
                                 align="center"
@@ -64,30 +64,23 @@ const Home = () => {
                             />
                     </div>
                     <div className="stats grid grid-cols-2 gap-10 mt-10 md:grid-cols-1 sm:grid-cols-1 md:justify-center ">
-                        <div className="flex flex-row md:justify-center sm:justify-center">
+                        {/* <div className="flex flex-row md:justify-center sm:justify-center">
                             <img
                                 className="flex items-center sm:w-5/6"
                                 align="center"
                                 src="https://github-readme-stats.vercel.app/api?username=MVKarthikReddy&theme=react&hide_border=false&include_all_commits=true&count_private=true"
                                 alt="Karthik"
                             />
-                        </div>
-                        <div className="flex flex-row md:justify-center sm:justify-center">
-                            <img
-                                className="sm:w-5/6"
-                                align="center"
-                                src="https://github-readme-streak-stats.herokuapp.com/?user=MVKarthikReddy&theme=react&hide_border=false"
-                                alt="Karthik"
-                            />
-                        </div>
-                        <div className="flex flex-row md:justify-center sm:justify-center">
+                        </div> */}
+                        /
+                        {/* <div className="flex flex-row md:justify-center sm:justify-center">
                             <img 
                                 className="sm:w-4/6"
                                 align="center"
                                 alt="Karthik's Top Languages" 
                                 src="https://github-readme-stats.vercel.app/api/top-langs/?username=MVKarthikReddy&layout=compact&theme=tokyonight&langs_count=10"
                             />
-                        </div>
+                        </div> */}
                         
                     </div>
                 </div>
