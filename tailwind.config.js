@@ -10,6 +10,9 @@ export default {
 
       fontFamily: {
         sans: [
+          '"Nunito"',
+          '"Kanit"',
+          '"Sofadi One"',
           '"Kalam"',
           '"Jacquard 12"',
           '"Pacifico"',
@@ -219,6 +222,8 @@ export default {
             "100%": {
                 opacity: 1,
                 transform: "translate3d(0, 0, 0)",
+                
+
             },
         },
         "fade-in-bounce-left": {

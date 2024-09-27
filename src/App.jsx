@@ -5,69 +5,52 @@ import {
   // Navigate
 } from "react-router-dom";
 
-import { useState,useEffect } from "react";
 
-import Header from './components/Header/header'
-import Home from './components/Home/home'
+import SideComp from "./pages/SideComp";
+import Home from "./pages/Home";
+import Background from "./pages/Background";
+import Contact from "./pages/Contact";
+import Portfolio from "./pages/Portfolio";
+import Navbar from "./pages/Navbar";
 import Footer from "./components/Footer/footer";
-import About from "./components/About/about";
-import Resume from "./components/Resume/resume";
-import Work from "./components/Work/work";
-import Contact from "./components/contact/contact";
+import { useSidebar } from "./context/SideBarContext";
+import Header from "./components/Header/header";
+
 
 
 function App() {
 
-  const [load, upadateLoad] = useState(true);
+  const {isOpen, toggleSidebar, about, toggleAbout} = useSidebar()
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      upadateLoad(false);
-    }, 3000); // simulate loading for 3 seconds
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  return (
-    <>
-      {load ? 
-        (
-          <div className="flex items-center justify-center w-full h-[100vh] text-zinc-900 dark:text-gray-100 dark:bg-gray-950">
-            <div>
-              <h1 className="text-xl md:text-7xl font-bold flex items-center">L<svg stroke="currentColor" fill="currentColor" strokeWidth="0"
-                  viewBox="0 0 24 24" className="animate-spin" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2ZM13.6695 15.9999H10.3295L8.95053 17.8969L9.5044 19.6031C10.2897 19.8607 11.1286 20 12 20C12.8714 20 13.7103 19.8607 14.4956 19.6031L15.0485 17.8969L13.6695 15.9999ZM5.29354 10.8719L4.00222 11.8095L4 12C4 13.7297 4.54894 15.3312 5.4821 16.6397L7.39254 16.6399L8.71453 14.8199L7.68654 11.6499L5.29354 10.8719ZM18.7055 10.8719L16.3125 11.6499L15.2845 14.8199L16.6065 16.6399L18.5179 16.6397C19.4511 15.3312 20 13.7297 20 12L19.997 11.81L18.7055 10.8719ZM12 9.536L9.656 11.238L10.552 14H13.447L14.343 11.238L12 9.536ZM14.2914 4.33299L12.9995 5.27293V7.78993L15.6935 9.74693L17.9325 9.01993L18.4867 7.3168C17.467 5.90685 15.9988 4.84254 14.2914 4.33299ZM9.70757 4.33329C8.00021 4.84307 6.53216 5.90762 5.51261 7.31778L6.06653 9.01993L8.30554 9.74693L10.9995 7.78993V5.27293L9.70757 4.33329Z">
-                  </path>
-                </svg> ading . . .</h1>
-            </div>
-          </div>
-        ) :
-        (
-          <div className="transition-opacity duration-1000 ease-in opacity-100">
-          <Router >
-          <Header />
-            <div className="App" >
-
-              <Routes>
+  return(
+    <div className="fixed flex flex-row justify-between w-full">
+      <div className={`border lg:hidden xl:hidden`}>
+        <Header />
+      </div>
+      <div className={`sm:fixed sm:top-0 md:top-0 sm:left-0 md:left-0 h-full md:w-0 text-white duration-1000 sm:transition-transform md:transition-transform sm:transform sm:z-40 md:transform md:z-40 ${
+          about ? 'sm:-translate-x-0 md:-translate-x-0' : 'sm:-translate-x-full md:-translate-x-full'
+        }`}>
+          <SideComp />
+      </div>
+      <div className={`h-screen w-full my-3  sm:w-full sm:mx-3 sm:mt-16 md:mt-16 md:mx-3 overflow-y-scroll ${about? 'filter blur-sm cursor-pointer':''} ${(isOpen)? 'filter blur-sm cursor-pointer':''}`} onClick={() => {
+        toggleSidebar(false)
+        toggleAbout(false)
+        }}>
+            <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/resume" element={<Resume />} />
-                <Route path="/work" element={<Work />} />
-                <Route path="/contact" element={<Contact />} />
-              </Routes>
-
-              
-            </div>
-          <Footer />
-        </Router>
-        </div>
-      )
-      
-      }
-      
-    </>
+                <Route path="background" element={<Background />} />
+                <Route path="contact" element={<Contact />} />
+                <Route path="portfolio" element={<Portfolio />} />
+            </Routes>
+            <Footer />
+      </div>
+      <div className={`w-20 sm:w-0 md:w-0`}>
+          <Navbar />
+      </div>
+    </div>
+  
   )
+  
 }
 
 export default App
