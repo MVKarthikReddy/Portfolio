@@ -24,7 +24,7 @@ function App() {
 
   return(
     <div className="fixed flex flex-row justify-between w-full">
-      <div className={`border lg:hidden xl:hidden`}>
+      <div className={`lg:hidden xl:hidden`}>
         <Header />
       </div>
       <div className={`sm:fixed sm:top-0 md:top-0 sm:left-0 md:left-0 h-full md:w-0 text-white duration-1000 sm:transition-transform md:transition-transform sm:transform sm:z-40 md:transform md:z-40 ${
