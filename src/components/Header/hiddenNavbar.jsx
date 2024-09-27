@@ -17,9 +17,9 @@ const HiddenNavbar = () => {
     const navigate = useNavigate()
 
   return (
-    <div className={`fixed top-0 right-0 h-full w-64 text-white duration-1000 transition-transform transform z-40 lg:translate-x-0 ${
-        isOpen ? '-translate-x-0' : '-translate-x-full'
-      } lg:block lg:static`}>
+    <div className={`fixed top-0 right-0 h-full w-64 text-white duration-1000 transition-transform transform z-40 ${
+          isOpen ? '-translate-x-0' : '-translate-x-full'
+        } lg:block lg:static`}>
                 <div className='h-10 absolute right-8 top-8'>
                     <label></label><GiCrossMark className='text-xl text-blue-500 cursor-pointer' onClick={() => toggleSidebar(!isOpen)}/>
                 </div>
