@@ -76,7 +76,7 @@ const Contact = () => {
                             </div>
                             <div className=' py-1 px-4 flex justify-between'>
                                 <label className='font-bold text-gray-200'>Company</label>
-                                <label className='text-gray-500'></label>
+                                <label className='text-gray-500'>Accenture</label>
                             </div>
                         </div>
                         <div className='my-5 w-3/6 sm:w-5/6 mx-4 rounded-lg p-5 bg-zinc-900'>
