@@ -27,7 +27,7 @@ function App() {
       <div className={`lg:hidden xl:hidden`}>
         <Header />
       </div>
-      <div className={`sm:fixed sm:top-0 md:top-0 sm:left-0 md:left-0 h-full md:w-0 text-white duration-500 sm:transition-transform md:transition-transform sm:transform sm:z-40 md:transform md:z-40 ${(isOpen)? 'filter blur-sm cursor-pointer':''} ${
+      <div className={`sm:fixed md:fixed sm:m-0 md:m-0 sm:top-0 md:top-0 sm:left-0 md:left-0 h-full md:w-0 text-white duration-500 sm:transition-transform md:transition-transform sm:transform sm:z-40 md:transform md:z-40 ${(isOpen)? 'filter blur-sm cursor-pointer':''} ${
               about ? 'sm:-translate-x-0 md:-translate-x-0' : 'sm:-translate-x-full md:-translate-x-full'
             }`}
             onClick={() => {

@@ -137,7 +137,7 @@ function SideComp() {
                     <label className='flex flex-row justify-center items-center px-2 py-2 rounded border w-4/6 cursor-pointer'>
                         <a 
                             className=' text-gray-500 px-2 font-semibold' 
-                            href="https://docs.google.com/uc?export=download&id=1vpfVe4hmsuwTacMg_vSbgIxfZWSCUAhA" > 
+                            href="https://docs.google.com/document/d/1c6AoOwwyYwvkhIP6sekAnjNnYCGlBLpl/edit?usp=sharing&ouid=107933337130153856233&rtpof=true&sd=true" > 
                                 Download Resume 
                         </a>
                         <span><FaDownload className='text-gray-500'/></span>
