@@ -35,7 +35,7 @@ export const HomeSkeletonLoader = () => {
   );
 };
 
-const SkillSkeletonLoader = () => {
+export const SkillSkeletonLoader = () => {
     return (
       <div className='grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-11 mx-9 my-5'>
         {Array(6).fill().map((_, index) => (
