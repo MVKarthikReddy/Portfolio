@@ -46,16 +46,16 @@ const Home = () => {
                 (
                     <div className="text-white bg-zinc-950 rounded flex flex-col justify-center">
                         <div
-                            className="w-full pt-9 pb-4 px-9 bg-gradient-to-b from-black to-zinc-900 rounded-t">
-                            <div className="rounded-lg" style={{backgroundImage: `url(${'https://wallpapers.com/images/high/dark-space-wallpaper-eohy9aul0omw5ks3.webp'})`,backgroundRepeat: "no-repeat", backgroundSize:"cover"}}>
+                            className="w-full pt-9 pb-4 sm:mb-3 sm:px-0 px-9 bg-gradient-to-b from-black to-zinc-900 rounded-t">
+                            <div className="w-full sm:m-0 rounded-lg" style={{backgroundImage: `url(${'https://wallpapers.com/images/high/dark-space-wallpaper-eohy9aul0omw5ks3.webp'})`,backgroundRepeat: "no-repeat", backgroundSize:"cover"}}>
                                 <div  
-                                    className="leading-tight h-72 flex justify-center backdrop-blur-sm rounded-xl"
+                                    className=" leading-tight h-72 flex justify-center backdrop-blur-sm rounded-xl"
                                     >
-                                    <div className="flex flex-col h-full mt-4 w-3/5">
-                                        <label className="text-5xl sm:text-4xl font-extrabold mt-8 pl-15 w-3/4 ">
+                                    <div className=" flex flex-col h-full mt-4 w-3/5 sm:w-full">
+                                        <label className="text-5xl sm:px-5 sm:text-4xl font-extrabold mt-8 pl-15 w-3/4 ">
                                             Hola, Buddy's 
                                         </label>
-                                        <label className=" text-xl sm:text-lg my-7">
+                                        <label className=" text-xl sm:px-5 sm:text-lg my-7">
                                             {'<'}<span className="text-blue-500 font-bold">dev</span>{'>'} I am a
                                             <span className={`transition-text px-2 font-bold text-blue-400 ${fade ? 'fade-in' : 'fade-out'}`}>
                                                 {textArray[currentTextIndex]}
